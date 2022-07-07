@@ -1,0 +1,105 @@
+$slider-width: 400px;
+$slider-height: 300px;
+.slider {
+    height: $slider-height;
+}
+
+.wrapper {
+    position: relative;
+    width: $slider-width;
+    height: $slider-height;
+    z-index: 999;
+}
+
+.slides {
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 10000px;
+}
+
+.slides.shifting {
+    transition: left 0.2s ease-out;
+}
+
+.slide {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 1s;
+    position: relative;
+    border-radius: 2px;
+    margin-right: 30px;
+}
+
+.control {
+    position: absolute;
+    top: 45%;
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+}
+
+.prev,
+.next {
+    background-size: 22px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.prev {
+    background: url(/meccabook/slide-arrow.svg) no-repeat center center;
+    background-size: contain;
+    z-index: 1;
+}
+
+.next {
+    background: url(/meccabook/slide-arrow.svg) no-repeat center center;
+    background-size: contain;
+    z-index: 1;
+    right: 0;
+}
+
+.prev:active,
+.next:active {
+    transform: scale(0.8);
+}
+
+.visible {
+    visibility: visible;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.about-gallery-sec {
+    margin-top: 120px;
+}
+
+.container {
+    position: relative;
+}
+
+.next {
+    transform: rotate(180deg);
+    &:active {
+        transform: rotate(180deg);
+    }
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    .slide {
+        margin-block-end: 1rem;
+    }
+}
+
+form#address-form\ p-0 {
+    z-index: 9999999999999999999;
+}

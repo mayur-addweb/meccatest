@@ -1,0 +1,111 @@
+.signin-popup {
+    padding: 20px;
+    background: #faf8f3;
+    width: 100%;
+    position: relative;
+    margin: 50px auto;
+    max-width: 320px;
+    @media all and (min-width: 768px) {
+        padding: 30px;
+        max-width: 440px;
+        border-radius: 10px;
+    }
+    @media all and (min-width: 1200px) {
+        max-width: 715px;
+        border-radius: 20px;
+        padding: 75px 50px 45px;
+        overflow: auto;
+        margin: auto;
+        max-height: 100vh;
+    }
+    @media all and (max-width: 767px) {
+        max-width: 100%;
+        margin: 0;
+        height: 100%;
+        position: absolute;
+    }
+    .close-icn {
+        @include abs(15px, 15px, auto, auto);
+        width: 24px;
+        height: 24px;
+        @media all and (min-width: 1200px) {
+            top: 17px;
+            right: 22px;
+        }
+    }
+    .logo {
+        width: 140px;
+        margin-bottom: 57px;
+        @media all and (min-width: 768px) {
+            width: 180px;
+            margin-bottom: 41px;
+        }
+        @media all and (min-width: 1200px) {
+            width: 331px;
+        }
+    }
+    .btn-wrap {
+        margin-bottom: 79px;
+    }
+}
+
+h2.sign-title {
+    @include fontsize(20px);
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.035em;
+    color: #2c354e;
+    font-family: "leksa", serif;
+    margin-bottom: 24px;
+    @media all and (min-width: 1200px) {
+        font-size: 24px;
+    }
+}
+
+.sign-input-wrap {
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    padding: 7px 8px;
+    @media all and (min-width: 1200px) {
+        height: 75px;
+        background: white;
+        margin: 10px 0;
+        padding: 7px 19px;
+        max-width: 587.9px;
+    }
+    label {
+        @include fontsize(16px);
+        line-height: 1.2;
+        letter-spacing: -0.035em;
+        color: $color-darkgold;
+        font-weight: $fw-regular;
+        margin-bottom: 6px;
+    }
+    .form-control {
+        border: 0;
+    }
+    .form-control:focus {
+        background-color: #E8F0FE;
+    }
+}
+
+.forget-pwd {
+    margin-bottom: 20px;
+    .forget-pwd-link {
+        @include fontsize(14px);
+        letter-spacing: -0.035em;
+        text-decoration-line: underline;
+        line-height: 1.3;
+        font-family: "leksa", serif;
+        color: #2c354e;
+        background: transparent;
+        font-family: $secondary-font;
+    }
+}
+
+.btn {
+    @media (max-width: 1200px) {
+        width: 100%;
+    }
+}

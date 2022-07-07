@@ -1,0 +1,130 @@
+.home-banner {
+    position: relative;
+    .slide-img {
+        min-height: 270px;
+    }
+    .banner-slider {
+        margin-bottom: 0;
+    }
+    .banner-content {
+        padding: 26px 0 30px;
+        @media all and (min-width: 768px) {
+            @include abs(46%, auto, auto, 0);
+            width: 100%;
+            transform: translateY(-50%);
+        }
+        .container {
+            @media all and (min-width: 768px) {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+        .wrap {
+            @media all and (min-width: 768px) {
+                width: 400px;
+            }
+            @media all and (min-width: 992px) {
+                margin-right: 4%;
+            }
+            @media all and (min-width: 1200px) {
+                margin-right: 8%;
+            }
+        }
+    }
+}
+
+.gallery-wrap {
+    margin: 0 -4px;
+    width: calc(100% + 8px);
+    @media all and (min-width: 992px) {
+        margin: 0;
+        width: 100%;
+    }
+}
+
+.gallery-item {
+    width: 50%;
+    padding: 4px;
+    @media all and (min-width: 992px) {
+        padding: 4px 0;
+        margin: 0 10px;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+.gallery-slider {
+    .gallery-item {
+        width: 400px;
+        &:nth-child(even) {
+            width: 295px;
+        }
+    }
+    .slick-arrow {
+        &.slick-disabled {
+            display: none !important;
+        }
+    }
+    .slick-slide {
+        opacity: 0.5;
+        &.slick-active {
+            opacity: 1;
+        }
+    }
+}
+
+.testimonial-slider {
+    overflow: hidden;
+    .testimonial {
+        position: relative;
+        padding-top: 38px;
+        &:after {
+            @include after(25px, 20px);
+            @include abs(0, auto, auto, 0);
+            background: url(/meccabook/quote-img.svg) no-repeat center center;
+        }
+    }
+    .slick-arrow {
+        background: url(/meccabook/slide-arrow-gold.svg) no-repeat center center;
+        &.slick-prev {
+            display: none !important;
+        }
+        &.slick-next {
+            right: 40px;
+        }
+    }
+}
+
+.related-product-sec {
+    .slick-list {
+        overflow: inherit !important;
+    }
+    .slick-slider.slick-track {
+        justify-content: center;
+    }
+    .related-slider {
+        .slick-slide {
+            text-align: center;
+            @media all and (max-width: 767px) {
+                min-height: 400px;
+                height: 100%;
+            }
+            @media all and (max-width: 575px) {
+                max-width: 184px;
+            }
+            &.slick-active {
+                @media all and (max-width: 575px) {
+                    max-width: 184px;
+                }
+            }
+            div {
+                .vrt-category {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}

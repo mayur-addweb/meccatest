@@ -1,0 +1,63 @@
+.donated-sec {
+    background: $beige;
+    @media all and (min-width: 768px) {
+        background: none;
+        margin-bottom: 40px;
+    }
+    .container {
+        @media all and (min-width: 1200px) {
+            padding: 0 10px;
+        }
+    }
+    .donated-info {
+        position: relative;
+        overflow: hidden;
+        perspective: 1px;
+        transform-style: preserve-3d;
+        background: 50% 50% / cover;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        &:before {
+            background: 50% 50% / cover;
+            background-image: url("/meccabook/map-parallax-img.jpg");
+            transform: translateZ(-1px) scale(2);
+            z-index: -1;
+        }
+    }
+    .amount {
+        padding: 20px 0 25px;
+        @media all and (min-width: 768px) {
+            width: 67.8%;
+            background: $beige;
+        }
+        .price {
+            @include fontsize(36px);
+        }
+        .amt-head {
+            @media all and (min-width: 768px) {
+                width: 50%;
+                padding: 0 20px;
+            }
+            @media all and (min-width: 1200px) {
+                padding: 0 8%;
+            }
+        }
+        .amt-desc {
+            @media all and (min-width: 768px) {
+                width: 50%;
+                text-align: left;
+                padding-right: 20px;
+            }
+            @media all and (min-width: 1200px) {
+                padding-right: 10%;
+                padding-left: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,972 @@
+.checkout-sec {
+    .checkout-title {
+        @include fontsize(36px);
+        line-height: 1.09;
+        margin-bottom: 0;
+        letter-spacing: -0.065em;
+        color: #2C354E;
+        font-family: $secondary-font;
+        font-weight: normal;
+        @media all and (min-width: 1300px) {
+            @include fontsize(48px);
+            margin-bottom: 29px;
+        }
+    }
+    .cart-wrapper {
+        position: static;
+        height: auto;
+        padding: 20px 0 9px;
+        background: none;
+        @media all and (min-width: 768px) {
+            width: calc(100% - 320px);
+            max-width: 100%;
+        }
+        @media all and (min-width: 1024px) {
+            width: calc(100% - 420px);
+        }
+        @media all and (min-width: 1300px) {
+            width: calc(100% - 525px);
+            padding: 3px 0 9px;
+        }
+        .cart-preview {
+            @media all and (min-width: 768px) {
+                padding-right: 0;
+            }
+        }
+        .included {
+            @media all and (min-width: 768px) {
+                width: 113px;
+                padding-left: 7px;
+            }
+            @media all and (min-width: 992px) {
+                width: 166px;
+                padding-left: 17px;
+            }
+            @media all and (min-width: 1300px) {
+                width: 206px;
+            }
+        }
+        .inc-dcr-item {
+            @media all and (min-width: 768px) {
+                width: 65px;
+            }
+            @media all and (min-width: 992px) {
+                width: 85px;
+            }
+        }
+        .d-wrp1 {
+            @media all and (min-width: 879px) {
+                padding-right: 15px;
+            }
+            @media all and (min-width:1300px) {
+                width: calc(100% - 290px);
+            }
+        }
+        .d-wrp2 {
+            @media all and (min-width: 1300px) {
+                width: 272px;
+            }
+        }
+    }
+}
+
+.sku-txt {
+    @include fontsize(12px);
+    font-family: $secondary-font;
+    font-weight: $fw-light;
+    line-height: 1.44;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+    color: $navy;
+    margin-bottom: 0;
+    @media all and (min-width: 768px) {
+        margin-bottom: 10px;
+    }
+    @media all and (min-width: 1300px) {
+        @include fontsize(16px);
+        margin-bottom: 23px;
+    }
+}
+
+.instock {
+    font-weight: $fw-light;
+    color: $gold-dark;
+    line-height: 1.4;
+    display: none;
+    @media all and (min-width: 768px) {
+        display: inline-block;
+    }
+}
+
+.product-head {
+    border-bottom: 1px solid $gold-light;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    ul {
+        margin-bottom: 0;
+    }
+    li {
+        @include font-size(16px);
+        font-weight: $fw-bold;
+        line-height: 1.2;
+        font-family: $secondary-font;
+        color: $gold-dark;
+        letter-spacing: -0.035em;
+    }
+    .list-right {
+        width: 150px;
+        @media all and (min-width: 992px) {
+            width: 237px;
+        }
+        @media all and (min-width: 1300px) {
+            width: 270px;
+        }
+    }
+    .list-left {
+        width: calc(100% - 160px);
+        @media all and (min-width: 1300px) {
+            width: calc(100% - 298px);
+        }
+    }
+}
+
+.cart-item.check {
+    letter-spacing: -0.05em;
+    border-bottom: 1px solid $border-gray2;
+    padding-bottom: 19px;
+    margin-bottom: 19px;
+    @media all and (min-width: 768px) {
+        position: relative;
+    }
+    @media all and (min-width: 1300px) {
+        padding-bottom: 22px;
+        margin-bottom: 28px;
+    }
+    .item-prices {
+        span {
+            @media all and (min-width: 768px) {
+                display: block;
+            }
+        }
+    }
+    .remove-ilnk {
+        margin-left: 0;
+        letter-spacing: -0.015em;
+        font-family: $secondary-font;
+        @media all and (min-width: 768px) {
+            @include abs(auto, 0, 20px, auto);
+        }
+        @media all and (min-width: 1300px) {
+            @include fontsize(16px);
+            bottom: 26px;
+        }
+    }
+    .orig-price {
+        margin-bottom: 2px;
+        @media all and (min-width: 768px) {
+            width: auto;
+        }
+        @media all and (min-width: 992px) {
+            margin-left: 20px;
+        }
+        @media all and (min-width: 1300px) {
+            width: 90px;
+            text-align: right;
+        }
+    }
+    .item-title {
+        @media all and (min-width: 1300px) {
+            @include fontsize(16px);
+            font-weight: $fw-bold;
+            letter-spacing: -0.035em;
+        }
+    }
+    .item-exp {
+        @media all and (min-width: 1300px) {
+            @include fontsize(14px);
+            line-height: 1.4;
+            letter-spacing: 0.08em;
+        }
+    }
+    .desc-item {
+        @media all and (min-width: 1300px) {
+            justify-content: space-between;
+        }
+    }
+}
+
+.checkout-summary {
+    background: $beige-third;
+    margin: 0 -19px;
+    width: calc(100% + 38px);
+    padding: 20px 19px 40px;
+    @media all and (min-width: 768px) {
+        width: 300px;
+        margin: 0;
+    }
+    @media all and (min-width: 1024px) {
+        width: 400px;
+    }
+    @media all and (min-width: 1300px) {
+        width: 505px;
+        padding: 30px 41px 40px;
+    }
+}
+
+.frm-desc {
+    @include fontsize(16px);
+    line-height: 1.4;
+    font-weight: $fw-light;
+    color: $navy;
+    margin-bottom: 10px;
+    a {
+        text-decoration: underline;
+    }
+    strong {
+        font-weight: $fw-semibold;
+    }
+}
+
+.sub-total {
+    margin-bottom: 20px;
+    span {
+        @include fontsize(24px);
+        font-family: $secondary-font;
+        letter-spacing: -0.035em;
+        line-height: 1.2;
+        color: $navy;
+        width: 49%;
+        sub {
+            @include fontsize(14px);
+            display: block;
+            line-height: 1.2;
+            bottom: 0;
+            @media all and (min-width: 1300px) {
+                display: inline-block;
+            }
+        }
+        &:last-child {
+            text-align: right;
+        }
+    }
+    &.estimate {
+        margin-bottom: 13px;
+    }
+    &.coupon {
+        margin-bottom: 13px;
+    }
+    &.tax-rw {
+        padding-bottom: 33px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid $gold-light;
+    }
+    &.verify-check {
+        padding-bottom: 16px;
+        border-bottom: 1px solid $gold-light;
+        margin-bottom: 30px;
+        .frm-desc {
+            width: calc(100% - 97px);
+            margin-bottom: 0;
+            @media all and (min-width: 1300px) {
+                width: calc(100% - 153px);
+            }
+        }
+        .input-wrap {
+            position: relative;
+        }
+        input {
+            position: absolute;
+            opacity: 0;
+            height: 0;
+            width: 0;
+            &:checked {
+                &+label {
+                    &:after {
+                        background: url(/meccabook/check-icn.svg) no-repeat center center;
+                    }
+                }
+            }
+        }
+        label {
+            @include fontsize(20px);
+            line-height: 1.4;
+            position: relative;
+            padding-right: 36px;
+            font-weight: $fw-light;
+            color: $navy;
+            &:after {
+                @include after(30px, 30px);
+                @include abs(0, 0, auto, auto);
+                border: 1px solid $gold-light;
+                background: #fff;
+            }
+        }
+    }
+    &.total-price {
+        margin-bottom: 30px;
+        @media all and (min-width: 1300px) {
+            margin-bottom: 59px;
+        }
+        span {
+            font-weight: $fw-bold;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+    select {
+        width: 88px;
+        height: 31px;
+        border: 1px solid #C6B075;
+        background: #ffffff;
+        color: #2C354E;
+        font-weight: 400;
+        font-size: 24px;
+        font-family: $secondary-font;
+    }
+}
+
+.post-code {
+    margin-bottom: 20px;
+    .form-control {
+        @include fontsize(14px);
+        width: 49%;
+        height: 42px;
+        font-weight: $fw-light;
+        background: #fff;
+        @media all and (min-width: 1300px) {
+            width: 35%;
+        }
+    }
+    .post-txt {
+        @include fontsize(12px);
+        line-height: 1.4;
+        color: $navy;
+        font-weight: $fw-light;
+        width: 49%;
+        @media all and (min-width: 1300px) {
+            @include fontsize(16px);
+        }
+    }
+    .btn {
+        width: 49%;
+        justify-content: center;
+        @media all and (min-width: 1200px) {
+            width: 73px;
+            height: 42px;
+            background: $gold-light;
+            margin-left: 10px;
+        }
+        @media all and (max-width: 1199px) {
+            width: 134px;
+            height: 42px;
+            background: $gold-light;
+            margin-left: 10px;
+        }
+    }
+}
+
+.btn.checkout-btn {
+    width: 100%;
+    letter-spacing: 0.08em;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.summary-title {
+    @include fontsize(30px);
+    font-family: $secondary-font;
+    font-weight: $fw-bold;
+    letter-spacing: -0.05em;
+    line-height: 1.5;
+    color: $gold-dark;
+    margin-bottom: 11px;
+    @media all and (min-width: 1300px) {
+        margin-bottom: 30px;
+    }
+}
+
+.popup-overlay {
+    @include fixed(0, auto, auto, 0);
+    z-index: 99999;
+    background: rgba(44, 53, 78, 0.3);
+    height: 100vh;
+    width: 100%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    @media all and (max-width: 1199px) {
+        overflow: auto;
+    }
+    @media all and (max-width: 767px) {
+        background: unset;
+    }
+    @media all and (min-width: 1200px) {
+        padding: 30px;
+    }
+    &.active {
+        display: flex;
+    }
+}
+
+.donation-checked {
+    padding-bottom: 28px;
+    border-bottom: 1px solid $gold-light;
+    margin-bottom: 30px;
+    .sub-total {
+        &.verify-check {
+            border: 0;
+            margin-bottom: 17px;
+            padding-bottom: 0;
+        }
+        .amount {
+            width: 81px;
+            height: 31px;
+            text-align: right;
+            padding: 0 9px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            border: 1px solid $gold-light;
+            font-family: $secondary-font;
+            background: #fff;
+        }
+    }
+}
+
+.shipping-popup {
+    padding: 20px 0;
+    @media all and (max-width: 767px) {
+        max-height: 100vh;
+        overflow: auto;
+    }
+    @media all and (min-width: 768px) {
+        padding: 45px 0;
+        max-width: 520px;
+        margin: auto;
+    }
+    @media all and (min-width: 1200px) {
+        padding: 45px 0;
+        max-width: 715px;
+    }
+    .code-price {
+        padding: 0 20px;
+        margin-bottom: 25px;
+        @media all and (min-width: 768px) {
+            margin-bottom: 0;
+        }
+        @media all and (min-width: 1200px) {
+            padding: 0 40px;
+        }
+        .apply-txt {
+            @include fontsize(14px);
+            font-family: $secondary-font;
+            letter-spacing: -0.035em;
+            display: inline-block;
+            line-height: 1;
+            text-decoration: underline;
+            color: #2C354E;
+            @media all and (min-width: 1200px) {
+                @include fontsize(24px);
+            }
+        }
+        select {
+            @include fontsize(18px);
+            border: 1px solid $navy;
+            border-radius: 10px;
+            text-align: center;
+            padding: 5px 28px 5px 53px;
+            height: 40px;
+            width: 100%;
+            appearance: none;
+            -webkit-appearance: none;
+            letter-spacing: -0.01em;
+            @media all and (min-width: 1200px) {
+                @include fontsize(24px);
+                height: 50px;
+            }
+        }
+        .cart-icn {
+            @include abs(47%, auto, auto, 10px);
+            transform: translateY(-50%);
+            width: 15px;
+            height: 15px;
+            @media all and (min-width: 1200px) {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+    .logo {
+        margin-bottom: 15px;
+        @media all and (min-width: 768px) {
+            margin-bottom: 0;
+            margin-left: 20px;
+        }
+        @media all and (min-width: 1200px) {
+            width: 211px;
+            margin-left: 40px;
+        }
+    }
+    .btn-wrap {
+        padding: 0 20px;
+        margin-bottom: 0;
+        @media all and (min-width: 1200px) {
+            padding: 0;
+        }
+        .back-link {
+            margin-top: 10px;
+            @include fontsize(14px);
+            line-height: 1.3;
+            color: $gold-dark;
+            background: transparent;
+            letter-spacing: -0.035em;
+            text-decoration-line: underline;
+            font-family: $secondary-font;
+            @media all and (min-width: 1200px) {
+                @include fontsize(24px);
+            }
+        }
+    }
+    .fields-wrap {
+        padding: 0 20px 20px;
+        @media all and (max-width: 1200px) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .form-control {
+            background: $white;
+            width: 100%;
+            @media all and (max-width: 767px) {
+                border: 1px solid $border-clr;
+                border-radius: 5px;
+            }
+        }
+        .input-check {
+            position: relative;
+            padding-top: 25px;
+            .form-control {
+                @include abs(0, auto, auto, 0);
+                position: relative;
+                opacity: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                &:checked {
+                    &+label {
+                        &:before {
+                            background: $white url(/meccabook/check-icn.svg) no-repeat center center;
+                        }
+                    }
+                }
+            }
+            label {
+                @include fontsize(14px);
+                font-weight: $fw-light;
+                line-height: 1.4;
+                position: relative;
+                padding-left: 40px;
+                color: $navy;
+                display: block;
+                &:before {
+                    @include after(30px, 30px);
+                    @include abs(50%, auto, auto, 0);
+                    transform: translateY(-50%);
+                    border-radius: 5px;
+                    border: 1px solid $border-clr;
+                    background: $white;
+                }
+            }
+        }
+    }
+    .select-wrp {
+        position: relative;
+        &:after {
+            @include after(10px, 6px);
+            @include abs(50%, 18px);
+            background: url(/meccabook/icon-down.svg) no-repeat center center;
+            display: inline-block;
+            transform: translate(0, -50%);
+            @media all and (min-width: 1200px) {
+                right: 0;
+                width: 16px;
+                height: 16px;
+                background-size: 100% 100%;
+                top: 0;
+                transform: translate(0, 0);
+            }
+        }
+    }
+    .select-input {
+        width: 100%;
+        height: calc(1.5em + 0.75rem + 2px);
+        padding: 0.375rem 0.75rem;
+        background: $white;
+        width: 100%;
+        appearance: none;
+        -webkit-appearance: none;
+        border: 0;
+        @media all and (max-width: 767px) {
+            border: 1px solid $border-clr;
+            border-radius: 5px;
+        }
+    }
+    .input-wrap {
+        margin-bottom: 10px;
+        @media all and (min-width: 1200px) {
+            height: 75px;
+            border: 1px solid $border-clr;
+            border-radius: 10px;
+            background: $white;
+            margin: 10px 0;
+            padding: 7px 19px;
+        }
+        label {
+            @include fontsize(14px);
+            line-height: 1.2;
+            letter-spacing: -0.035em;
+            color: $color-darkgold;
+            font-weight: $fw-regular;
+            margin-bottom: 6px;
+            z-index: 1;
+        }
+        .form-control {
+            background: $white;
+            border: 0;
+            @media all and (max-width: 767px) {
+                border-radius: 0.25rem;
+                border: 1px solid #B69F62;
+            }
+        }
+    }
+    .coln-two {
+        .input-wrap {
+            @media all and (min-width: 768px) {
+                width: 48%;
+            }
+            &.input-shipping {
+                @media all and (min-width: 768px) {
+                    width: 68%;
+                }
+            }
+            &.input-country {
+                @media all and (min-width: 768px) {
+                    width: 28%;
+                }
+            }
+            &.exp-date {
+                width: 49%;
+                @media all and (min-width: 768px) {
+                    width: 48%;
+                }
+            }
+            &.cvv-no {
+                width: 49%;
+                @media all and (min-width: 768px) {
+                    width: 48%;
+                }
+            }
+        }
+    }
+    .coln-three {
+        .input-zip {
+            @media all and (min-width: 768px) {
+                width: 20%;
+            }
+        }
+        .input-city {
+            @media all and (min-width: 768px) {
+                width: 46%;
+            }
+        }
+        .input-state {
+            @media all and (min-width: 768px) {
+                width: 26%;
+            }
+        }
+    }
+}
+
+.cart-drpdwn {
+    margin-left: 13px;
+    width: 179px;
+    text-align: center;
+    position: relative;
+    @media all and (min-width: 1200px) {
+        width: 198px;
+        margin-left: 20px;
+    }
+    &:after {
+        @include after(10px, 6px);
+        @include abs(50%, 18px);
+        background: url(/meccabook/down-arrow.svg) no-repeat;
+        display: inline-block;
+        transform: translate(0, -50%);
+    }
+}
+
+.address-form {
+    @media all and (min-width: 1200px) {
+        padding: 0 40px;
+    }
+}
+
+.address-card {
+    position: relative;
+    margin-bottom: 10px;
+    @media all and (min-width: 1200px) {
+        margin-bottom: 20px;
+    }
+    .addr-label {
+        padding: 20px 20px 20px 68px;
+        background: $white;
+        border: 1px solid $border-gray;
+        position: relative;
+        text-align: start;
+        &:before {
+            @include after(30px, 30px);
+            @include abs(50%, auto, auto, 20px);
+            transform: translateY(-50%);
+            background: $border-gray2;
+            border-radius: 50%;
+        }
+    }
+    .form-control[type="radio"] {
+        @include abs(0, auto, auto, 0);
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        &:checked {
+            &+.addr-label {
+                &:after {
+                    @include after(20px, 20px);
+                    @include abs(50%, auto, auto, 25px);
+                    transform: translateY(-50%);
+                    background: $navy;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+    .close-icn {
+        @include abs(10px, 10px, auto, auto);
+    }
+    .addr,
+    .name {
+        @include fontsize(16px);
+        line-height: 1.4;
+        letter-spacing: -0.035em;
+        color: $navy;
+        font-weight: $fw-regular;
+        @media all and (min-width: 1200px) {
+            @include fontsize(24px);
+        }
+    }
+    .addr {
+        font-weight: $fw-light;
+        margin: 0;
+    }
+}
+
+.steps-list {
+    margin-bottom: 21px;
+    @media all and (min-width: 768px) {
+        margin-top: 26px;
+    }
+    @media all and (min-width: 1200px) {
+        padding: 0;
+        margin-bottom: 40px;
+        margin-top: 36px;
+    }
+    @media all and (max-width: 767px) {
+        padding: 0 20px;
+    }
+    li {
+        @include fontsize(12px);
+        line-height: 1.2;
+        padding: 8px;
+        letter-spacing: -0.035em;
+        color: $navy;
+        font-family: $secondary-font;
+        position: relative;
+        @media all and (min-width: 1200px) {
+            @include fontsize(24px);
+            padding: 21px 30px;
+            color: $gray-text;
+        }
+        &:after {
+            @include after(100%, 2px);
+            @include abs(100%, auto, auto, 0);
+            background: transparent;
+        }
+        &.active {
+            @media all and (min-width: 1200px) {
+                color: $navy;
+            }
+            &:after {
+                background: $gold;
+            }
+        }
+        &.checked {
+            color: $navy;
+            &:before {
+                @include after(16px, 16px);
+                @include abs(auto, auto, 100%, 50%);
+                transform: translateX(-50%);
+                bottom: calc(100% - 5px);
+                background: url(/meccabook/checked-blue-icn.svg) no-repeat center center;
+                background-size: contain;
+                @media all and (min-width: 1200px) {
+                    width: 24px;
+                    height: 24px;
+                    bottom: calc(100% - 20px);
+                }
+            }
+        }
+    }
+}
+
+.pkg-wrap {
+    margin-bottom: 30px;
+    @media all and (min-width: 1200px) {
+        overflow: hidden;
+        background: $white;
+        border-radius: 20px;
+        border: 1px solid $border-clr;
+    }
+    .address-card {
+        border-top: 1px solid $border-clr;
+        margin-bottom: 0;
+        &:last-child {
+            border-bottom: 1px solid $border-clr;
+            @media all and (min-width: 1200px) {
+                border-bottom: 0;
+            }
+        }
+        &:first-child {
+            @media all and (min-width: 1200px) {
+                border-top: 0;
+            }
+        }
+        .rate {
+            @include fontsize(16px);
+            line-height: 1.4;
+            letter-spacing: -0.035em;
+            color: $gold-dark;
+            text-align: right;
+            @media all and (min-width: 1200px) {
+                @include fontsize(24px);
+            }
+        }
+        .addr-label {
+            padding: 18px 20px 18px 68px;
+        }
+    }
+}
+
+.addr-overview {
+    margin-bottom: 20px;
+    padding: 0 20px;
+    strong,
+    span {
+        @include fontsize(14px);
+        letter-spacing: -0.035em;
+        line-height: 1.3;
+        color: $navy;
+        font-family: $secondary-font;
+    }
+    span {
+        width: 88px;
+        text-align: right;
+        @media all and (min-width: 1200px) {
+            @include fontsize(16px);
+            width: 190px;
+        }
+    }
+    strong {
+        font-weight: $fw-bold;
+        width: calc(100% - 98px);
+        @media all and (min-width: 1200px) {
+            @include fontsize(16px);
+            width: calc(100% - 210px);
+        }
+    }
+}
+
+.category-wrap.listcat-vw,
+.category-wrap.listcat-vw.vrt-category,
+.var-hor-category-img {
+    position: relative;
+    .linked-for-detailpage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: transparent;
+    }
+}
+
+.add-new {
+    padding-top: 10px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.add-addr {
+    @include fontsize(14px);
+    line-height: 1.3;
+    color: $navy;
+    letter-spacing: -0.035em;
+    text-decoration-line: underline;
+    font-family: $secondary-font;
+    background: transparent;
+    @media all and (min-width: 1200px) {
+        @include fontsize(24px);
+        padding-bottom: 184px;
+    }
+}
+
+.shipping-popup-block {
+    span.form__element {
+        margin-bottom: 0 !important;
+    }
+    .input-wrap.input-country {
+        &::after {
+            @media all and (max-width: 767px) {
+                top: 65.5%;
+            }
+        }
+        .sf-select.form__select.sf-select--underlined.select-input {
+            background: transparent;
+            padding-left: 0px;
+            padding-right: 0;
+            border: 0 !important;
+        }
+        label.sf-select__label {
+            @media all and (max-width: 767px) {
+                top: -7px;
+                padding-left: 0;
+                font-size: 13px;
+                line-height: 1.2;
+                letter-spacing: -0.035em;
+                color: #785600;
+                font-weight: 500;
+                margin-bottom: 6px;
+                z-index: 1;
+            }
+        }
+        .sf-select__dropdown {
+            padding: 0 12px!important;
+            height: 40px;
+            border: 0;
+            border-radius: 0.25rem;
+            border: 1px solid #B69F62;
+            background: #ffffff;
+            padding-left: 11px;
+        }
+    }
+}

@@ -1,0 +1,145 @@
+body.kids-route {
+    .fl-title-kids {
+        font-family: $primary-fontfamily;
+        color: #21A6BB;
+    }
+    .product-list-banner {
+        background-image: url(/meccabook/product-list-banner.png);
+        h1.ban-title {
+            color: #F1EDE3;
+            text-shadow: 0px 0px 100px #000000;
+            font-weight: normal;
+            font-family: $primary-fontfamily;
+            font-size: 80px;
+        }
+        p.ban-title {
+            display: none;
+        }
+    }
+    // start product detail page css
+    .product-details {
+        .pageInfo-title {
+            color: #72388D;
+            font-size: 48px;
+            letter-spacing: -0.03em;
+            font-family: $primary-fontfamily;
+            font-weight: normal;
+        }
+        .publisher {
+            color: #21A6BB;
+            font-size: 24px;
+            font-weight: normal;
+            letter-spacing: -0.035em;
+            font-family: $primary-fontfamily;
+        }
+    }
+    h4.info-title {
+        color: #21A6BB;
+        font-size: 24px;
+        font-family: $primary-fontfamily;
+        font-weight: normal;
+    }
+    h4.related-title {
+        color: #21A6BB;
+        font-size: 36px;
+        font-weight: normal;
+        letter-spacing: -0.03em;
+        font-family: $primary-fontfamily;
+    }
+    .stiky-onscroll .th-info .th-title {
+        color: #72388D;
+        font-family: $primary-fontfamily;
+    }
+    .stiky-onscroll .th-info .th-desc {
+        color: #21A6BB;
+        font-family: $primary-fontfamily;
+    }
+    // end product detail css
+}
+
+.kids-home {
+    .art-showmore-btn,
+    .footer {
+        background-image: url(/meccabook/kids-bg-img.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        form {
+            background-image: url(/meccabook/kids-bg-img.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    .tab-content {
+        margin-top: 40px;
+        .nav-link {
+            font-size: 24px;
+            font-weight: normal;
+            font-family: $primary-fontfamily !important;
+            &.active.kids-blue-link:after {
+                background: #21A6BB !important;
+            }
+            &.active.kids-purple-link:after {
+                background: #72388D !important;
+            }
+            &.kids-blue-link {
+                color: #21A6BB !important;
+            }
+            &.kids-purple-link {
+                color: #72388D !important;
+            }
+        }
+    }
+    .latest-slider .latest-item {
+        background: #ffffff !important;
+    }
+    .knowledge-info {
+        h2.sec-title {
+            color: #72388D;
+            letter-spacing: -0.035em;
+            font-size: 30px;
+            font-weight: normal;
+            font-family: $primary-fontfamily;
+        }
+        span.publisher {
+            color: #21A6BB;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    }
+}
+
+.kidsbg1 {
+    background-image: url(/meccabook/Kids-ProductBG-1.jpg);
+}
+
+.kidsbg2 {
+    background-image: url(/meccabook/Kids-ProductBG-2.jpg);
+}
+
+.kidsbg3 {
+    background-image: url(/meccabook/Kids-ProductBG-3.jpg);
+}
+
+.kidsbg4 {
+    background-image: url(/meccabook/Kids-ProductBG-4.jpg);
+}
+
+.kidsbg5 {
+    background-image: url(/meccabook/Kids-ProductBG-5.jpg);
+}
+
+.kidsbg6 {
+    background-image: url(/meccabook/Kids-ProductBG-6.jpg);
+}
+
+.kidsbg7 {
+    background-image: url(/meccabook/Kids-ProductBG-7.jpg);
+}
+
+.kidsbg8 {
+    background-image: url(/meccabook/Kids-ProductBG-8.jpg);
+}
+
+.slider-img-bg {
+    background: #FAF8F4;
+}

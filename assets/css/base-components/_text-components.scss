@@ -1,0 +1,103 @@
+.sec-head {
+    margin-bottom: 68px;
+    @media all and (min-width: 768px) {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media all and (min-width: 1200px) {
+        margin-bottom: 74px;
+    }
+}
+
+.sec-head.kids {
+    @media all and (min-width: 768px) {
+        max-width: 535px;
+        width: 100%;
+    }
+}
+
+.details {
+    width: 100%;
+    @media all and (min-width: 768px) {
+        width: 48%;
+    }
+    @media all and (min-width: 1200px) {
+        width: 49%;
+    }
+}
+
+.small-view {
+    width: 279px;
+    height: 249px;
+    margin-bottom: 20px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    @media all and (max-width: 767px) {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        width: auto;
+    }
+    @media all and (max-width: 320px) {
+        width: 279px;
+    }
+}
+
+h6.do-title {
+    @include fontsize(16px);
+    font-weight: $fw-bold;
+    letter-spacing: -0.035em;
+    color: $navy;
+    line-height: 1.2;
+    margin-bottom: 36px;
+    font-family: $secondary-font;
+    @media all and (min-width: 1200px) {
+        margin-bottom: 26px;
+    }
+    &.prev-title {
+        margin-bottom: 22px;
+    }
+}
+
+.do-price {
+    @include fontsize(45px);
+    font-weight: $fw-light;
+    letter-spacing: -0.05em;
+    color: $gold-dark;
+    line-height: 1.4;
+    margin-bottom: 0;
+    font-family: $secondary-font;
+}
+
+.txt-desc {
+    @include fontsize(16px);
+    line-height: 1.4;
+    color: #2C354E;
+    margin-bottom: 15px;
+    margin: 0;
+    @media all and (min-width: 768px) {
+        margin-left: 15px;
+        text-align: left;
+    }
+    @media all and (min-width: 992px) {
+        width: 217px;
+        margin-left: 20px;
+    }
+}
+
+h4.related-title {
+    @include fontsize(24px);
+    color: $navy;
+    letter-spacing: -0.035em;
+    line-height: 1.2;
+    margin-bottom: 12px;
+    font-weight: $fw-regular;
+    @media all and (min-width: 1200px) {
+        @include fontsize(36px);
+        letter-spacing: -0.05em;
+        margin-bottom: 31px;
+    }
+}

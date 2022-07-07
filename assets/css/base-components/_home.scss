@@ -1,0 +1,725 @@
+.knowledge-sec {
+    padding: 30px 0;
+    z-index: 1;
+    overflow: visible;
+    .container {
+        overflow: visible;
+        @media all and (min-width: 1200px) {
+            padding: 0px;
+        }
+    }
+    @media all and (min-width: 768px) {
+        padding: 50px 0;
+    }
+    @media all and (min-width: 1200px) {
+        padding: 91px 0 73px 0px;
+    }
+}
+
+.knowledge-info {
+    overflow: hidden;
+    @media (max-width: 767px) {
+        margin-top: 20px;
+    }
+    .info-title {
+        @include fontsize(30px);
+        line-height: 1.09;
+        letter-spacing: -0.065em;
+        color: $gold-dark;
+        font-family: $secondary-font;
+        margin: 0 15px 5px 0;
+        @media all and (min-width: 992px) {
+            letter-spacing: -0.035em;
+            line-height: 1.2;
+            margin-right: 22%;
+        }
+    }
+    .info-desc {
+        color: $gray-dark;
+        line-height: 1.44;
+        font-weight: $fw-light;
+        margin-bottom: 10px;
+        letter-spacing: -0.01em;
+        @media all and (min-width: 992px) {
+            @include fontsize(18px);
+            letter-spacing: normal;
+            line-height: 1.4;
+        }
+    }
+}
+
+.review {
+    .price {
+        @include fontsize(23px);
+        color: $gold-dark;
+        line-height: 1.44;
+        font-weight: $fw-light;
+        letter-spacing: -0.015em;
+        del {
+            color: $navy;
+            padding-right: 6px;
+        }
+    }
+}
+
+.event-block {
+    padding: 40px 0 0;
+    @media all and (min-width: 992px) {
+        padding: 80px 0;
+    }
+    h4 {
+        @include fontsize(24px);
+        font-family: $secondary-font;
+        color: $navy;
+        line-height: 1.2;
+        letter-spacing: -0.035em;
+        margin-bottom: 5px;
+        font-weight: normal;
+        @media all and (max-width: 767px) {
+            @include fontsize(18px);
+        }
+    }
+    .event-item {
+        @media all and (min-width: 768px) {
+            padding: 0 55px;
+        }
+        @media all and (min-width: 768px) {
+            padding: 0 95px;
+        }
+        .detail {
+            @media all and (min-width: 992px) {
+                width: 44%;
+                padding-left: 2%;
+            }
+            @media all and (min-width:1200px) {
+                width: 46%;
+                padding-left: 4%;
+            }
+        }
+        .event-detail {
+            margin-bottom: 33px;
+            @media all and (min-width: 768px) {
+                margin-bottom: 0;
+                width: 48%;
+            }
+            @media all and (min-width: 992px) {
+                width: 64%;
+            }
+            @media all and (min-width: 1200px) {
+                width: 64%;
+            }
+        }
+        .event-post {
+            @media all and (min-width: 768px) {
+                width: 45%;
+            }
+            @media all and (min-width: 992px) {
+                width: 34%;
+            }
+            @media all and (min-width: 1200px) {
+                width: 39%;
+            }
+            .post {
+                margin-bottom: 20px;
+            }
+            h4 {
+                @media all and (min-width: 1200px) {
+                    @include fontsize(20px);
+                    margin-bottom: 2px;
+                }
+            }
+            .sub-title {
+                margin-bottom: 0;
+            }
+            .view {
+                width: 88px;
+                height: 84px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .detail {
+                padding: 8px;
+                width: calc(100% - 88px);
+            }
+        }
+    }
+    .event-slider {
+        overflow: hidden;
+        padding-bottom: 5px;
+        @media all and (min-width: 992px) {
+            padding-bottom: 0;
+        }
+        .slick-arrow {
+            background: url(/meccabook/slide-arrow-gold-small.svg) no-repeat center center;
+            @media all and (max-width: 767px) {
+                transform: translateY(0);
+                top: auto;
+                bottom: 20px;
+            }
+            @media all and (min-width: 768px) {
+                background: url(/meccabook/slide-arrow-gold.svg) no-repeat center center;
+            }
+            &.slick-next {
+                @media all and (max-width: 767px) {
+                    transform: translateY(0) rotate(180deg);
+                    right: calc(50% - 60px);
+                }
+            }
+            &.slick-prev {
+                @media all and (max-width: 767px) {
+                    left: calc(50% - 60px);
+                }
+            }
+        }
+    }
+}
+
+.ev-view {
+    height: 160px;
+    margin-bottom: 17px;
+    @media all and (min-width: 768px) {
+        height: auto;
+    }
+    @media all and (min-width:992px) {
+        width: 55%;
+        margin-bottom: 0;
+    }
+    @media all and (min-width:1200px) {
+        width: 53%;
+        max-width: 295px;
+    }
+    img {
+        width: 100%;
+        height: 292px;
+        object-fit: cover;
+        @media all and (max-width: 767px) {
+            height: 160px;
+        }
+    }
+}
+
+.followus-sec {
+    padding: 30px 0;
+    &.followus-wrap {
+        padding-top: 70px;
+    }
+}
+
+.follow-list {
+    overflow: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    li {
+        display: inline-block;
+        width: 204px;
+        height: 204px;
+        @media all and (min-width: 768px) {
+            width: 230px;
+            height: 230px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.folow-info {
+    overflow: hidden;
+}
+
+h4.followUs {
+    @include fontsize(18px);
+    line-height: 1.2;
+    font-family: $primary-font;
+    font-weight: $fw-regular;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    color: $black;
+}
+
+.AboutBook-wrap {
+    @media all and (max-width: 767px) {
+        margin: 70px 0;
+    }
+}
+
+.testimonial-sliderwrap {
+    padding: 130px 0;
+    @media all and (max-width: 1199px) {
+        display: none;
+    }
+}
+
+.event-prev {
+    background: url(/meccabook/event-left-arror.png) no-repeat center center;
+    left: -75px !important;
+    z-index: 99;
+    @media all and (max-width: 1370px) {
+        left: -40px !important;
+    }
+    @media all and (max-width: 1199px) {
+        background: url(/meccabook/slide-arrow.svg) no-repeat center center;
+        left: -22px !important;
+    }
+}
+
+.event-next {
+    background: url(/meccabook/event-right-arrow.png) no-repeat center center;
+    transform: unset !important;
+    right: -75px !important;
+    z-index: 99;
+    @media all and (max-width: 1370px) {
+        right: -40px !important;
+    }
+    @media all and (max-width: 1199px) {
+        background: url(/meccabook/slide-arrow.svg) no-repeat center center;
+        right: -22px !important;
+        transform: rotate(180deg) !important;
+    }
+}
+
+section.content-blog.about-us-sec {
+    @media all and (min-width: 1200px) {
+        margin-top: 77px;
+        padding-bottom: 90px;
+    }
+}
+
+.gallery-blog {
+    .about-gallery-sec {
+        margin-top: 0;
+    }
+}
+
+.event-block {
+    .container {
+        @media all and (max-width: 767px) {
+            padding: 0;
+        }
+        h3.th-sec-title {
+            @media all and (max-width: 767px) {
+                padding: 0 22px;
+            }
+        }
+    }
+}
+
+.cart-preview {
+    &__aside {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        height: 100%;
+        box-shadow: 0px 4px 11px rgb(29 31 34 / 10%);
+    }
+}
+
+p.sec-desc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    p {
+        font-size: 18px !important;
+        color: #4B4C4D !important;
+        font-family: "leksa-sans", sans-serif !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: initial;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        background: transparent !important;
+        span {
+            font-size: 18px !important;
+            color: #4B4C4D !important;
+            font-family: "leksa-sans", sans-serif !important;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: initial;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            background: transparent !important;
+        }
+    }
+}
+
+router-link,
+nuxt-link {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+p.desc.product-desc {
+    p {
+        iframe {
+            width: 100%;
+        }
+    }
+}
+
+.feature-products {
+    .slick-slider .slick-track {
+        align-items: center !important;
+    }
+    .latest-view {
+        .img-wrp {
+            height: 378px !important;
+            max-width: 378px !important;
+            width: 100% !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px!important;
+            max-width: 378px;
+            width: 100%;
+        }
+    }
+    .latest-books {
+        .img-wrp {
+            height: 178px !important;
+            max-width: 178px !important;
+            width: 100% !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+            margin-bottom: 20px;
+            margin-left: 7px;
+            margin-right: 7px;
+            max-width: 178px;
+            padding-top: 20px;
+        }
+    }
+    button.slick-arrow.slick-next {
+        transform: rotate(0deg) !important;
+        right: -75px!important;
+        z-index: 99;
+    }
+    button.slick-arrow.slick-prev {
+        left: -75px!important;
+        z-index: 99;
+        transform: rotate(180deg);
+    }
+    .slick-slider .slick-arrow {
+        top: 35%;
+        background: url(/meccabook/yellow-arrow.png) no-repeat 50% !important;
+        &:hover {
+            background: url(/meccabook/yellow-arrow.png) no-repeat 50% !important;
+        }
+    }
+}
+
+.feature-products {
+    .latest-view {
+        .img-wrp {
+            .slick-slider.slick-initialized {
+                max-width: 378px;
+                width: 100%;
+            }
+        }
+    }
+    .latest-books {
+        .img-wrp {
+            .slick-slider.slick-initialized {
+                max-width: 178px;
+            }
+        }
+    }
+}
+
+body.pro-detail {
+    overflow-x: hidden;
+}
+
+.book-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .book-main-wrapper {
+        position: relative;
+        display: flex;
+        width: 36%;
+        margin-right: 4%;
+        height: 23.4375VW;
+        flex-wrap: wrap;
+        .close-btn {
+            display: none;
+            position: absolute;
+            right: -16px;
+            top: -16px;
+        }
+        .book-cover {
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+            width: 26.041666666666668VW;
+            height: 20.833333333333336VW;
+            left: -10.020833VW;
+            top: 10px;
+            transition: all 0.9s ease-in-out;
+            -webkit-perspective: 67.70833333333334VW;
+            perspective: 67.70833333333334VW;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            .pageprev {
+                position: absolute;
+                -webkit-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+                -webkit-transition-property: -webkit-transform;
+                transition-property: transform;
+                width: 13.90625VW;
+                height: 100%;
+                left: 100%;
+                -webkit-transform-origin: left center;
+                transform-origin: left center;
+            }
+            #first,
+            #first .back {
+                -webkit-transform: rotateY(180deg);
+                transform: rotateY(180deg);
+            }
+            #first {
+                z-index: 102;
+            }
+            #secondprev {
+                z-index: 103;
+                transition: transform 0.8s ease-in-out;
+            }
+            #thirdprev .content {
+                width: 20.833333333333336VW;
+            }
+            #fourthprev {
+                z-index: 101;
+            }
+            .pageprev>div,
+            .outer,
+            .content,
+            .helper-class-to-make-bug-visbile {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+            }
+            .pageprev>div {
+                width: 100%;
+                -webkit-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+            }
+            .back {
+                -webkit-transform: rotateY(-180deg);
+                transform: rotateY(-180deg);
+            }
+            .outer {
+                width: 100%;
+                overflow: hidden;
+                z-index: 999;
+            }
+            .content {
+                width: 200%;
+                background: black;
+            }
+            img {
+                height: 100%;
+            }
+        }
+        .previewbtn-wrapper {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin-top: 25px;
+            justify-content: center;
+            img {
+                width: 25px;
+                margin-right: 10px;
+            }
+        }
+    }
+    .section-right {
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 36%);
+        position: relative;
+        left: 0;
+        transition: all 0.9s ease-out;
+    }
+}
+
+.bookOpened {
+    .previewbtn {
+        display: none;
+    }
+    .book-wrapper {
+        .book-main-wrapper {
+            .close-btn {
+                display: block !important;
+                z-index: 999 !important;
+                transform-style: unset !important;
+                backface-visibility: visible !important;
+                left: unset !important;
+                right: 14.322916666666666VW !important;
+                top: -25px !important;
+            }
+            .book-cover {
+                visibility: inherit;
+                cursor: pointer;
+                left: 48%;
+                z-index: 1007;
+                outline: none;
+            }
+        }
+        .section-right {
+            left: 156.25VW;
+        }
+    }
+}
+
+.feature-products {
+    .kn-carousel {
+        @media (min-width: 992px) {
+            min-height: 500px;
+        }
+        .latest-slider {
+            @media (min-width: 992px) {
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+            }
+            .latest-item {
+                @media (min-width: 992px) {
+                    position: absolute;
+                    height: fit-content;
+                    right: -3000px;
+                    transition: all 0.9s ease-out;
+                    &.active {
+                        right: 0;
+                        transition: all 0.6s ease-in-out;
+                    }
+                }
+                .knowledge-info {
+                    .slick-slider {
+                        button {
+                            &.slick-arrow {
+                                &.slick-prev {
+                                    left: -130px !important;
+                                    @media (max-width: 1390px) {
+                                        left: -69px !important;
+                                    }
+                                }
+                                &.slick-next {
+                                    right: -950px !important;
+                                    @media (max-width: 1390px) {
+                                        right: -887px !important;
+                                    }
+                                }
+                                &.slick-disabled {
+                                    pointer-events: none;
+                                    opacity: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.zoom {
+    .book-wrapper {
+        .book-main-wrapper {
+            .book-cover {
+                transform: scale(1.6);
+                #fourthprev {
+                    &::before {
+                        opacity: 80%;
+                        transform: scale(5.5);
+                    }
+                }
+            }
+        }
+        .close-btn {
+            color: #fff;
+        }
+    }
+}
+
+.latest-slider {
+    .latest-books {
+        .img-wrp {
+            .slick-slider.slick-initialized {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.openBook {
+    #secondprev {
+        transform: rotateY(-180deg);
+    }
+    .book-cover {
+        left: -5.020833VW !important;
+    }
+}
+
+.sf-loader__overlay {
+    top: -50px !important;
+}
+
+.home-banner {
+    .slick-dots {
+        bottom: -8.5px !important;
+    }
+}
+
+.disable-page {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.swell-tab {
+    @media (max-width: 767px) {
+        display: none !important;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        background: url(/meccabook/icon-ribbon.svg) no-repeat;
+        width: 24px;
+        height: 24px;
+        top: 8px;
+        left: 22px;
+        display: inline-block;
+        transform: rotate(-90deg);
+        vertical-align: middle;
+    }
+}

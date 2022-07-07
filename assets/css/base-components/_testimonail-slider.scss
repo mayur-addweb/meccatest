@@ -1,0 +1,21 @@
+.testimonial-slider {
+    overflow: hidden;
+    .testimonial {
+        position: relative;
+        padding-top: 38px;
+        &:after {
+            @include after(25px, 20px);
+            @include abs(0, auto, auto, 0);
+            background: url(/meccabook/quote-img.svg) no-repeat center center;
+        }
+    }
+    .slick-arrow {
+        background: url(/meccabook/slide-arrow-gold.svg) no-repeat center center;
+        &.slick-prev {
+            display: none !important;
+        }
+        &.slick-next {
+            right: 40px;
+        }
+    }
+}

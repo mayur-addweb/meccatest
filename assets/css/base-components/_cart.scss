@@ -1,0 +1,80 @@
+.inc-dcr-item {
+    width: 85px;
+    height: 25px;
+    border: 1px solid $border-clr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 7px;
+    @media all and (min-width: 768px) {
+        margin-bottom: 0;
+    }
+    .onlyNumber {
+        @include fontsize(18px);
+        line-height: 24px;
+        font-weight: $fw-light;
+        width: 52px;
+        text-align: center;
+        margin: 0;
+        height: 23px;
+        padding: 0;
+        border: 0;
+        color: $gray-dark;
+    }
+    .decre-btn {
+        @include abs(50%, auto, auto, 0);
+        background: url(/meccabook/Icon-minus.svg) no-repeat center center;
+        transform: translateY(-50%);
+        width: 24px;
+        height: 100%;
+        border: 0;
+    }
+    .incr-btn {
+        @include abs(50%, 0, auto, auto);
+        background: url(/meccabook/Icon-plus.svg) no-repeat center center;
+        transform: translateY(-50%);
+        width: 24px;
+        height: 100%;
+        border: 0;
+    }
+}
+
+.top-block {
+    a.sf-link.sf-button--pure.sf-product-card__link,
+    a.sf-link.sf-product-card-horizontal__link.sf-product-card-horizontal__link--image {
+        text-align: center !important;
+        .sf-image--wrapper {
+            img.sf-image {
+                max-width: 232px !important;
+                width: 232px !important;
+                max-height: unset !important;
+                height: 232px !important;
+                object-fit: contain !important;
+                @media all and (max-width: 767px) {
+                    height: 106px !important;
+                    max-width: 106px !important;
+                }
+            }
+        }
+    }
+    .view-btn {
+        color: #ffffff !important;
+        text-decoration: none;
+        span {
+            color: #ffffff;
+        }
+    }
+    .category-details {
+        .sf-link {
+            text-decoration: none;
+        }
+    }
+}
+
+img.sf-image.sf-image-loaded {
+    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.25));
+    @media all and (max-width: 991px) {
+        filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+    }
+}

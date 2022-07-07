@@ -1,0 +1,352 @@
+.footer {
+    padding: 27px 0;
+    background-image: unset;
+    form {
+        background: unset;
+    }
+    @media all and (min-width: 1200px) {
+        padding: 58px 0;
+    }
+    .container {
+        @media all and (min-width: 1200px) {
+            padding: 0 10px;
+        }
+    }
+}
+
+// feature block css
+.primary-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: unset;
+    max-width: 280px;
+    margin: 0 auto 25px;
+    @media all and (min-width: 768px) {
+        max-width: initial;
+        padding: 0;
+    }
+    @media all and (min-width: 992px) {
+        margin-bottom: 35px;
+    }
+    @media all and (max-width: 767px) {
+        max-width: unset;
+    }
+    // link wrap
+    // footer links
+    .subscribe-wrap {
+        order: 5;
+        width: 100%;
+        padding: 6px 0 0 0;
+        margin-left: -3px;
+        @media all and (min-width: 768px) {
+            width: 50%;
+            margin: 0 auto;
+        }
+        @media all and (min-width: 992px) {
+            width: 23%;
+            margin: 0;
+            padding: 0;
+        }
+        @media all and (min-width: 1200px) {
+            width: 33%;
+            max-width: 400px;
+        }
+        h4 {
+            color: $black;
+            font-weight: 400;
+            text-align: center;
+            @include fontsize(18px);
+            margin-bottom: 24px;
+            @media all and (min-width: 992px) {
+                text-align: left;
+                font-weight: 700;
+                color: $navy;
+                @include fontsize(16px);
+                margin-bottom: 18px;
+            }
+        }
+        // footer form csss
+        // social links
+    }
+    .test {
+        @media all and (max-width: 575px) {
+            width: 50%;
+            &:nth-child(1) {
+                order: 2;
+            }
+            &:nth-child(2) {
+                order: 1;
+            }
+            &:nth-child(3) {
+                order: 3;
+            }
+            &:nth-child(4) {
+                order: 4;
+            }
+        }
+    }
+}
+
+.copyright-info {
+    text-align: center;
+    @include fontsize(16px);
+    color: $black;
+    font-weight: 400;
+}
+
+.chat-wrap {
+    text-align: right;
+    a {
+        &:hover {
+            @media all and (max-width: 767px) {
+                display: none;
+            }
+            .chat-btn-wrap {
+                .chat-txt {
+                    padding: 0 8px 0 24px;
+                    transition: width 1s ease-in-out;
+                    width: 122px;
+                    height: 35px;
+                }
+            }
+        }
+        .chat-btn-wrap {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            flex: 1;
+            justify-content: flex-end;
+            width: 100%;
+            padding-right: 20px;
+            margin-bottom: 20px;
+            .icon-chat {
+                width: 60px;
+                height: 60px;
+                background: url(/meccabook/icon-chat.svg) no-repeat;
+                background-size: 60px 60px;
+                background-position: center;
+                position: relative;
+                z-index: 11;
+                @media all and (max-width: 767px) {
+                    width: 40px;
+                    height: 40px;
+                    background-size: 40px 40px;
+                }
+            }
+            .chat-txt {
+                background-color: #F6B12F;
+                color: #FFF;
+                font-size: 22px;
+                line-height: 35px;
+                font-weight: 600;
+                position: relative;
+                left: -20px;
+                z-index: 1;
+                border-radius: 8px;
+                width: 0;
+                height: 35px;
+                transition: width 1s ease-in-out;
+            }
+        }
+    }
+}
+
+// footer link css
+.footer-links {
+    li {
+        margin-bottom: 6px;
+    }
+    a {
+        color: #4B4C4D;
+        text-decoration: underline;
+        letter-spacing: -0.2px;
+        font-weight: 300;
+        font-size: 14px;
+        font-weight: 300;
+        font-family: $primary-font;
+        line-height: 16px;
+        &:hover {
+            transition: 0.3s;
+            opacity: 0.7;
+        }
+    }
+}
+
+.primary-footer {
+    .links-tl,
+    h4 {
+        color: #2C354E !important;
+        font-weight: bold !important;
+        font-size: 16px !important;
+        letter-spacing: -0.035em;
+        font-family: $secondary-font !important;
+    }
+}
+
+// footer feature block css start
+.feature-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 55px;
+    @media all and (min-width: 768px) {
+        padding: 0;
+    }
+    @media all and (min-width: 1200px) {
+        margin-bottom: 95px;
+    }
+    .feature-wrap {
+        width: 49%;
+        margin-bottom: 5px;
+        padding-right: 28px;
+        @media all and (min-width: 992px) {
+            display: flex;
+        }
+        &:nth-child(even) {
+            .feature-icon {
+                padding-left: 0;
+            }
+        }
+        @media all and (min-width: 768px) {
+            width: 23%;
+            margin-bottom: 0;
+        }
+        @media all and (min-width: 992px) {
+            width: 21%;
+            padding-right: 5px;
+        }
+    }
+    .feature-icon {
+        margin-bottom: 13px;
+        padding-left: 7px;
+        @media all and (min-width: 992px) {
+            margin: 0 10px 0 0;
+            padding: 0;
+        }
+    }
+    &:after {
+        content: '';
+        width: 92%;
+        height: 1px;
+        @include abs(auto, 0, -20px, 0);
+        margin: 0 auto;
+        background: $gold-light;
+        @media all and (min-width: 768px) {
+            width: 100%;
+            bottom: -33px;
+        }
+    }
+}
+
+// footer feature block css end
+.subscribe-form {
+    margin-bottom: 12px;
+    @media all and (min-width: 992px) {
+        margin-bottom: 9px;
+    }
+    .form-wrap {
+        @media all and (min-width: 1200px) {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+    .input-wrap {
+        margin-bottom: 12px;
+        @media all and (min-width: 1200px) {
+            width: 65%;
+        }
+        @media all and (min-width: 1300px) {
+            width: 67%;
+            max-width: 266px;
+        }
+    }
+    .form-control {
+        min-height: 42px;
+        @include fontsize(14px);
+        font-weight: 300;
+        border-color: $gold-light;
+        text-align: center;
+        @media all and (min-width: 992px) {
+            text-align: left;
+        }
+    }
+    .btn-wrap {
+        text-align: center;
+        @media all and (min-width: 992px) {
+            text-align: left;
+        }
+    }
+}
+
+// links 
+.social-links {
+    display: flex;
+    justify-content: center;
+    @media all and (min-width: 992px) {
+        justify-content: left;
+    }
+    .social-wrap {
+        margin: 0 6px;
+        @media all and (min-width: 992px) {
+            margin: 0 10px 0 0;
+        }
+        a {
+            display: inline-block;
+            &:hover {
+                transition: 0.3s;
+                opacity: 0.7;
+            }
+        }
+        // social icon
+    }
+}
+
+.subscribe-wrap {
+    .needsclick.kl-private-reset-css-Xuajs1 {
+        @media all and (max-width: 767px) {
+            display: block !important;
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+            margin-bottom: 13px !important;
+        }
+    }
+    input {
+        height: 42px !important;
+        @media all and (max-width: 767px) {
+            width: 100% !important;
+        }
+    }
+    button {
+        max-width: 124px;
+        max-height: 42px;
+        padding: 11px 34px !important;
+        font-size: 16px !important;
+        font-family: $primary-font !important;
+        line-height: 21px !important;
+        height: unset !important;
+        &:hover {
+            transition: 0.3s;
+            opacity: 0.8;
+            &::after {
+                height: calc(100% + 2px);
+                z-index: -1;
+            }
+        }
+        &::after {
+            z-index: -1;
+        }
+        @media all and (max-width: 767px) {
+            width: 184px !important;
+            margin: 0 auto !important;
+        }
+    }
+}
+
+.ql-editor {
+    @media all and (max-width: 767px) {
+        text-align: center !important;
+    }
+}

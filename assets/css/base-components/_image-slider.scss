@@ -1,0 +1,134 @@
+  // about page image slider css start 
+  .gallery-wrap {
+      margin: 0 -4px;
+      width: calc(100% + 8px);
+      @media all and (min-width: 992px) {
+          margin: 0;
+          width: 100%;
+      }
+  }
+  
+  .gallery-item {
+      width: 50%;
+      padding: 4px;
+      @media all and (min-width: 992px) {
+          padding: 4px 0;
+          margin: 0 10px;
+      }
+      img {
+          width: 100%;
+      }
+  }
+  
+  .gallery-slider {
+      .gallery-item {
+          width: 400px;
+          &:nth-child(even) {
+              width: 295px;
+          }
+      }
+      .slick-arrow {
+          &.slick-disabled {
+              display: none !important;
+          }
+      }
+      .slick-slide {
+          opacity: 0.5;
+          &.slick-active {
+              opacity: 1;
+          }
+      }
+  }
+  
+  .events-sliders {
+      position: relative;
+      .slick-slider .slick-arrow {
+          background: url(/meccabook/next-event.png) no-repeat center center !important;
+          @media all and (max-width: 767px) {
+              background: url(/meccabook/Shape-event.png) no-repeat center center !important;
+              width: 13.5px !important;
+              height: 27px !important;
+              background-size: contain !important;
+          }
+      }
+      button {
+          font-size: 0;
+      }
+      .slick-slider .slick-arrow {
+          width: 40px;
+          height: 40px;
+      }
+      button.slick-arrow.slick-next {
+          position: absolute;
+          bottom: -37px;
+          background-color: #fff !important;
+          left: 73%;
+          top: auto;
+          transform: rotate(0deg);
+          @media all and (max-width: 1299px) {
+              left: 73.5%;
+          }
+          @media all and (max-width: 991px) {
+              left: 71.5%;
+          }
+          @media all and (max-width: 767px) {
+              left: 55%;
+              bottom: -37px;
+          }
+      }
+      button.slick-arrow.slick-prev {
+          position: absolute;
+          bottom: -38px;
+          left: 61%;
+          top: auto;
+          background-color: #fff !important;
+          transform: rotate(180deg);
+          @media all and (max-width: 1299px) {
+              left: 57%;
+          }
+          @media all and (max-width: 991px) {
+              left: 51.5%;
+          }
+          @media all and (max-width: 767px) {
+              left: 35%;
+          }
+      }
+      .showmore-card-btn {
+          padding-bottom: 35px;
+          &::before {
+              @media all and (max-width: 767px) {
+                  display: none;
+              }
+          }
+          .show-more {
+              z-index: 999;
+              position: absolute;
+              right: 25%;
+              bottom: 0px;
+              @media all and (max-width: 1024px) {
+                  bottom: -2px;
+              }
+              @media all and (max-width: 767px) {
+                  left: 0;
+                  right: 0;
+                  display: none;
+              }
+              span.slideEvent {
+                  background-color: #fff;
+                  box-shadow: unset;
+                  color: #988146;
+                  padding: 10px 40px 10px;
+                  font-size: 16px;
+                  font-weight: 400;
+                  font-style: normal;
+                  font-family: $primary-font;
+              }
+          }
+      }
+  }
+  
+  .address-card {
+      .addr-label {
+          text-align: start !important;
+      }
+  }

@@ -1,0 +1,392 @@
+.header {
+    position: relative;
+    .navbar {
+        padding: 0;
+        display: block;
+    }
+    .header-top {
+        padding: 9px 0;
+        @media all and (min-width: 768px) {
+            padding: 20px 0;
+        }
+        @media all and (min-width: 992px) {
+            padding: 27px 0 6px;
+        }
+        @media all and (max-width: 767px) {
+            height: 50px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10px;
+            position: unset;
+            @media all and (max-width: 991px) {
+                overflow: visible;
+            }
+            @media all and (min-width: 1300px) {
+                max-width: 1260px;
+            }
+        }
+        .mobile-menu {
+            min-width: 58px;
+            padding: 0;
+            border: 0;
+            @media all and (min-width: 768px) {
+                display: none;
+            }
+            button {
+                background: transparent;
+                border: none;
+                outline: none;
+                appearance: none;
+                -webkit-appearance: none;
+                width: 18px;
+                height: 14px;
+                position: relative;
+                padding: 0;
+                vertical-align: super;
+            }
+            .line {
+                width: 100%;
+                height: 2px;
+                border-radius: 2px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: $navy;
+                &:nth-child(2) {
+                    top: 4px;
+                }
+                &:nth-child(3) {
+                    top: 8px;
+                }
+                &:last-child {
+                    top: auto;
+                    bottom: 0;
+                }
+            }
+        }
+        // search wrap css
+        .search-wrap {
+            display: none;
+            @media all and (max-width: 767px) {
+                @include abs(100%, 20px, auto, 20px);
+                padding-bottom: 10px;
+                padding-top: 0;
+                background: $white;
+            }
+            @media all and (min-width: 768px) {
+                display: block;
+                width: 60%;
+            }
+            @media all and (min-width: 992px) {
+                width: 72%;
+            }
+            @media all and (min-width: 1200px) {
+                width: 75%;
+                max-width: 925px;
+            }
+            &.active-serch {
+                @media all and (max-width: 767px) {
+                    display: block;
+                }
+            }
+            .form-wrap {
+                @media all and (max-width: 767px) {
+                    display: flex;
+                }
+                @media all and (min-width: 768px) {
+                    display: flex;
+                }
+                .search-input {
+                    @media all and (max-width: 767px) {
+                        width: calc(100% - 45px);
+                    }
+                    @media all and (min-width: 768px) {
+                        width: 65%;
+                        margin-right: 2%;
+                    }
+                    @media all and (min-width: 992px) {
+                        width: 78%;
+                        max-width: 715px;
+                    }
+                    .form-control {
+                        @include fontsize(14px);
+                        border-color: $gold;
+                        @media all and (min-width: 992px) {
+                            min-height: 47px;
+                            padding: 5px 20px;
+                            letter-spacing: -0.2px;
+                        }
+                    }
+                }
+                // search btn css
+            }
+        }
+        .header-right {
+            display: flex;
+            padding: 2px 3px 0 0;
+            @media all and (min-width: 768px) {
+                display: none;
+            }
+            .btn-wrap+.btn-wrap {
+                margin-left: 13px;
+            }
+            .search-btn {
+                padding: 0;
+                background: url(/meccabook/icon-search-2.svg) no-repeat;
+                width: 18px;
+                height: 18px;
+                margin-top: 2px;
+                appearance: none;
+                -webkit-appearance: none;
+            }
+            .cart-btn {
+                padding: 0;
+                width: 24px;
+                height: 24px;
+                background: url(/meccabook/icon-cart.svg) no-repeat;
+                position: relative;
+                cursor: pointer;
+                @media all and (min-width: 768px) {
+                    top: -3px;
+                }
+                .wrap-icon {
+                    position: absolute;
+                    top: -4px;
+                    right: -9px;
+                    z-index: 1;
+                    .icon-counter {
+                        font-family: $secondary-fontfamily;
+                        font-style: normal;
+                        background: $gold-dark;
+                        line-height: 1;
+                        letter-spacing: -1px;
+                        width: 17px;
+                        height: 17px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        @include fontsize(9.75px);
+                        font-weight: 400;
+                        color: $white;
+                        @include radius(50%);
+                    }
+                }
+            }
+        }
+    }
+    .account-dropdown {
+        position: relative;
+    }
+}
+
+.header-bottom {
+    padding: 0 10px;
+    @media all and (min-width: 768px) {
+        display: flex !important;
+        justify-content: space-between;
+        max-width: 1130px;
+        margin: 0 auto;
+    }
+    @media all and (min-width: 1300px) {
+        max-width: 1260px;
+    }
+    .navbar-nav {
+        @media all and (min-width: 768px) {
+            flex-direction: row;
+        }
+        .nav-item {
+            &:hover {
+                .dropdown-menu {
+                    margin-top: 0;
+                    @media all and (min-width: 1200px) {
+                        display: block;
+                    }
+                }
+            }
+        }
+        .nav-item+.nav-item {
+            @media all and (min-width: 768px) {
+                margin-left: 15px;
+            }
+            @media all and (min-width: 992px) {
+                margin-left: 33px;
+            }
+            @media all and (min-width: 1200px) {
+                margin-left: 63px;
+            }
+        }
+    }
+    .dropdown-toggle:after {
+        border: 0;
+        width: 11px;
+        height: 6px;
+        background: url(/meccabook/icon-down.svg) no-repeat center top;
+        vertical-align: top;
+        margin-top: 5px;
+        @media all and (min-width: 992px) {
+            margin: 8px 0 0 6px;
+        }
+    }
+    .nav-link {
+        @include fontsize(16px);
+        color: $navy;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 0;
+        @media all and (min-width: 768px) {
+            @include fontsize(18px);
+            padding: 4px 0;
+            letter-spacing: -0.3px;
+        }
+        &:hover {
+            transition: 0.3s;
+            opacity: 0.7;
+        }
+        &.kids-link {
+            @media all and (min-width: 768px) {
+                color: $teal;
+                font-family: $primary-fontfamily;
+            }
+        }
+    }
+    .dropdown-menu {
+        background: transparent;
+        border: none;
+        @media all and (min-width: 768px) {
+            background: $white;
+        }
+    }
+    .dropdown-item {
+        @include fontsize(14px);
+        color: $navy;
+        @media all and (min-width: 768px) {
+            padding: 5px;
+        }
+        &:hover,
+        &:focus,
+        &:active {
+            transition: 0.3s;
+            opacity: 0.7;
+            background: $white;
+            color: $navy;
+        }
+    }
+    .navigation-right {
+        display: none;
+        @media all and (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+        }
+        @media all and (min-width: 992px) {
+            padding: 0 40px;
+            margin-top: 3px;
+        }
+        a {
+            transition: 0.3s;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+        .btn-wrap+.btn-wrap {
+            margin-left: 10px;
+            @media all and (min-width: 992px) {
+                margin-left: 13px;
+            }
+        }
+        .user-btn {
+            width: 18px;
+            height: 18px;
+            background: url(/meccabook/icon-user.svg) no-repeat;
+            border: none;
+            outline: none;
+        }
+        .cart-btn {
+            padding: 0;
+            width: 20px;
+            height: 20px;
+            background: url(/meccabook/icon-cart.svg) no-repeat;
+            background-size: cover;
+            position: relative;
+            top: -3px;
+            @media all and (min-width: 992px) {
+                width: 24px;
+                height: 24px;
+                background-size: cover;
+                margin-top: 5px;
+            }
+            .wrap-icon {
+                position: absolute;
+                top: -7px;
+                right: -10px;
+                z-index: 1;
+                .icon-counter {
+                    font-family: $secondary-fontfamily;
+                    background: $gold-dark;
+                    width: 17px;
+                    height: 17px;
+                    line-height: 1;
+                    letter-spacing: -1px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @include fontsize(12px);
+                    font-weight: 400;
+                    color: $white;
+                    @include radius(50%);
+                    font-style: normal;
+                }
+            }
+        }
+    }
+}
+
+//  sign in section css
+.signin-drpdwn {
+    @include abs(100%, 0, auto, auto);
+    width: 160px;
+    padding-bottom: 10px;
+    text-align: center;
+    z-index: 99;
+    background: #f1ede3 !important;
+    @media all and (min-width: 992px) {
+        right: auto;
+        transform: translateX(-50%);
+    }
+    &:hover {
+        background: #f1ede3 !important;
+    }
+    .btn-wrp {
+        padding: 10px 10px 5px;
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 7px 19px;
+            letter-spacing: 0.08em;
+        }
+    }
+    .acc-link {
+        @include fontsize(14px);
+        display: block;
+        text-align: center;
+        line-height: 1.4;
+        font-weight: $fw-light;
+        color: $navy;
+        padding: 3px;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+            background: $white;
+        }
+    }
+}
+
+.account-menu-btn {
+    @media all and (min-width: 768px) {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+}

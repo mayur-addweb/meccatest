@@ -1,0 +1,273 @@
+.left-menu {
+    display: none;
+    @media all and (min-width: 1200px) {
+        display: block;
+    }
+    .category-menu {
+        margin-bottom: 86px;
+    }
+    // accordian 
+    .checkform {
+        .input-wrap {
+            position: relative;
+        }
+        input {
+            position: absolute;
+            opacity: 0;
+            height: 0;
+            width: 0;
+            &:checked {
+                &+label {
+                    &:after {
+                        background: url(/meccabook/check-icn.svg) no-repeat center center;
+                        background-size: 10px 10px;
+                    }
+                }
+            }
+        }
+        label {
+            @include fontsize(16px);
+            line-height: 1.4;
+            position: relative;
+            padding-left: 36px;
+            font-weight: $fw-light;
+            color: $gray-dark;
+            &:after {
+                @include after(20px, 20px);
+                @include abs(0, auto, auto, 0);
+                border: 1px solid $gold-light;
+            }
+        }
+    }
+    .radioform {
+        .input-wrap {
+            position: relative;
+        }
+        label {
+            @include fontsize(16px);
+            line-height: 1.4;
+            position: relative;
+            padding-left: 36px;
+            font-weight: $fw-light;
+            color: $gray-dark;
+            &:before {
+                @include after(20px, 20px);
+                @include abs(50%, auto, auto, 0);
+                transform: translateY(-50%);
+                background: $border-gray2;
+                border-radius: 50%;
+            }
+        }
+        .form-control[type="radio"] {
+            @include abs(0, auto, auto, 0);
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            &:checked {
+                &+label {
+                    &:after {
+                        @include after(10px, 10px);
+                        @include abs(50%, auto, auto, 5px);
+                        transform: translateY(-50%);
+                        background: $navy;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+    .price-range {
+        padding-bottom: 100px;
+        h4 {
+            color: #999;
+            font-weight: 500;
+            &:after {
+                content: "%";
+                padding-left: 1px;
+            }
+        }
+        input[type="range"] {
+            outline: 0;
+            border: 0;
+            border-radius: 500px;
+            width: 400px;
+            max-width: 100%;
+            margin: 24px 0 16px;
+            transition: box-shadow 0.2s ease-in-out;
+            // Chrome
+            @media screen and (-webkit-min-device-pixel-ratio: 0) {
+                & {
+                    overflow: hidden;
+                    height: 40px;
+                    -webkit-appearance: none;
+                    background-color: #ddd;
+                }
+                &::-webkit-slider-runnable-track {
+                    height: 40px;
+                    -webkit-appearance: none;
+                    color: #444;
+                    transition: box-shadow 0.2s ease-in-out;
+                }
+                &::-webkit-slider-thumb {
+                    width: 40px;
+                    -webkit-appearance: none;
+                    height: 40px;
+                    cursor: ew-resize;
+                    background: $white;
+                    box-shadow: -340px 0 0 320px $gold-dark, inset 0 0 0 40px $gold-dark;
+                    border-radius: 50%;
+                    transition: box-shadow 0.2s ease-in-out;
+                    position: relative;
+                }
+                &:active::-webkit-slider-thumb {
+                    background: $white;
+                    box-shadow: -340px 0 0 320px $gold-dark, inset 0 0 0 3px $gold-dark;
+                }
+            }
+            // Firefox
+            &::-moz-range-progress {
+                background-color: $gold-dark;
+            }
+            &::-moz-range-track {
+                background-color: #9a905d;
+            }
+            // IE
+            &::-ms-fill-lower {
+                background-color: $gold-dark;
+            }
+            &::-ms-fill-upper {
+                background-color: #9a905d;
+            }
+        }
+        #h4-container {
+            width: 400px;
+            max-width: 100%;
+            padding: 0 20px;
+            box-sizing: border-box;
+            position: relative;
+            #h4-subcontainer {
+                width: 100%;
+                position: relative;
+                h4 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    top: 0;
+                    width: 40px;
+                    height: 40px;
+                    color: $white !important;
+                    font-size: 12px;
+                    transform-origin: center -10px;
+                    transform: translateX(-50%);
+                    transition: margin-top 0.15s ease-in-out, opacity 0.15s ease-in-out;
+                    span {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        background-color: $gold-dark;
+                        border-radius: 0 50% 50% 50%;
+                        transform: rotate(45deg);
+                        z-index: -1;
+                    }
+                }
+            }
+            input:not(:active)+#h4-container h4 {
+                opacity: 0;
+                margin-top: -50px;
+                pointer-events: none;
+            }
+        }
+    }
+}
+
+.fl-title {
+    font-family: $secondary-font;
+    @include fontsize(24px);
+    font-weight: 400;
+    color: $navy;
+    letter-spacing: -0.7px;
+    margin-bottom: 23px !important;
+}
+
+h2.kids-title {
+    font-weight: 700;
+    color: #21A6BB;
+    font-size: 30px;
+}
+
+// accordian css start
+.accordion {
+    .card {
+        background: transparent;
+        border: none;
+        border-radius: 0;
+        margin-bottom: 8px;
+    }
+    .card-header {
+        background: transparent;
+        padding: 0;
+        border: 0;
+    }
+    .btn-link {
+        background: transparent;
+        border: none;
+        color: $gray-dark;
+        box-shadow: none;
+        text-transform: capitalize;
+        @include fontsize(16px);
+        padding: 0;
+        font-family: $primary-font;
+        text-decoration: none;
+        position: relative;
+        &:hover,
+        &:focus {
+            box-shadow: none;
+            opacity: 1;
+            // display: none;
+            background: none;
+            color: $gray-dark;
+            transition: none;
+            border-color: unset;
+            &::after {
+                height: 6px;
+            }
+        }
+        &:after {
+            content: '';
+            width: 10px;
+            height: 6px;
+            display: block;
+            @include abs(9px, 0);
+            transition: 0.3s;
+            background: url(/meccabook/down-arrow-2.svg) no-repeat;
+        }
+        &[aria-expanded="false"]:after {
+            transform: rotate(0);
+        }
+        &[aria-expanded="true"]:after {
+            transform: rotate(-180deg);
+        }
+    }
+    .card-body {
+        padding: 11px 0 3px 20px;
+        ul {
+            margin-bottom: 0;
+        }
+        .sub-category,
+        .sub-filter {
+            margin-bottom: 14px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            a {
+                color: $gray-dark;
+                font-weight: 300;
+                letter-spacing: -0.2px;
+            }
+        }
+    }
+}

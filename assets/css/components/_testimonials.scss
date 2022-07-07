@@ -1,0 +1,67 @@
+.testimonial {
+    margin-inline-end: 230px;
+}
+
+.testimonial-slider {
+    .test-desc {
+        min-width: 400px;
+        max-width: 400px;
+        margin-block-end: 20px;
+    }
+    .container {
+        .slick-slider {
+            .slick-list {
+                width: 86%;
+                margin: 0 auto;
+                @media (max-width: 1299px){
+                    width: 94%;
+                }
+                .slick-track {
+                    .slick-slide {
+                        max-width: 525px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.container {
+    overflow: hidden;
+}
+
+.quote-icon {
+    background-image: url(/meccabook/quote-img.svg);
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 20px;
+    margin-block-end: 1rem;
+}
+
+.next-slide {
+    background-image: url(/meccabook/slide-arrow-gold.svg);
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    right: 0;
+    top: 35%;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .testimonial-slider {
+        display: none;
+    }
+}
+
+@media (max-width: 1152px) {
+    .testimonial {
+        margin-inline-end: 140px;
+    }
+}

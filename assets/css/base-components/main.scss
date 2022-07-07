@@ -1,0 +1,39 @@
+// Import all files
+@import "mixin";
+@import "variable";
+@import "bootstrap/bootstrap";
+@import "slick-theme";
+@import "global";
+@import "contact-form";
+@import "header";
+@import "style";
+@import "left-menu";
+@import "sub-menu.scss";
+@import "cart.scss";
+@import "product.scss";
+@import "cards";
+@import "checkout.scss";
+@import "home.scss";
+@import "about.scss";
+@import "wishlist.scss";
+@import "donation.scss";
+@import "footer";
+
+// componets
+@import "banner";
+@import "brand-logo";
+@import "alert";
+@import "info-block";
+@import "searchbar";
+@import "text-components";
+@import "tab-panel";
+@import "buttons";
+@import "floating-label";
+@import "carousel-slider";
+@import "linking-with-icon";
+@import "typography";
+@import "info-cards";
+@import "error-page";
+@import "signin-up";
+
+/* pages */

@@ -1,0 +1,435 @@
+.banner {
+    display: none;
+    @media all and (min-width: 992px) {
+        display: block;
+        background: $grey-dark;
+        text-align: center;
+        min-height: 600px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.banner-wrap {
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+        @media all and (min-width: 992px) {
+            font-family: $secondary-font;
+            @include fontsize(64px);
+            color: $beige;
+            letter-spacing: -4px;
+            margin-bottom: 17px;
+        }
+    }
+    p {
+        @media all and (min-width: 992px) {
+            @include fontsize(18px);
+            color: $white;
+            padding: 0 24%;
+            line-height: 1.4;
+            margin-bottom: 0;
+        }
+        @media all and (min-width: 1200px) {
+            padding: 0 30%;
+        }
+    }
+}
+
+h1.ban-title {
+    @media all and (min-width: 992px) {
+        font-family: $secondary-font;
+        @include fontsize(64px);
+        color: $beige;
+        letter-spacing: -4px;
+        margin-bottom: 17px;
+    }
+}
+
+p.ban-title {
+    @media all and (min-width: 992px) {
+        @include fontsize(18px);
+        color: $white;
+        padding: 0 24%;
+        line-height: 1.4;
+        margin-bottom: 0;
+    }
+    @media all and (min-width: 1200px) {
+        padding: 0 30%;
+    }
+}
+
+.small-banner {
+    img {
+        width: 100%;
+    }
+}
+
+.banner.dtl-banner {
+    text-align: left;
+}
+
+.banner-heading {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+h1.bn-title {
+    margin-bottom: 0;
+    @media all and (max-width: 991px) {
+        color: #988146;
+        margin: 20px 0;
+        font-size: 30px;
+    }
+}
+
+.banner-desc-wrap {
+    color: #fff;
+    h1.bn-title {
+        color: #F1EDE3;
+        font-size: 64px;
+    }
+    .date-address {
+        color: #fff;
+        margin-bottom: 0;
+        font-size: 18px;
+        .date {
+            margin-bottom: 15px;
+        }
+        .address {
+            padding-left: 0;
+            margin-top: 15px;
+        }
+    }
+}
+
+.detail-wrap-sec {
+    padding: 60px 0;
+    @media all and (max-width: 991px) {
+        padding-top: 0px;
+    }
+}
+
+.detail-left-wrap {
+    p.desc {
+        font-size: 14px;
+        font-weight: 300;
+        font-style: italic;
+        color: #4B4C4D;
+        p {
+            font-size: 14px !important;
+            font-weight: 300;
+            font-style: italic;
+            color: #4B4C4D;
+        }
+    }
+}
+
+.detail-right-wrap {
+    .subtitle {
+        font-size: 26px;
+        @media all and (max-width: 991px) {
+            font-size: 18px;
+        }
+    }
+    .desc-title {
+        font-size: 30px;
+        font-weight: 400;
+    }
+}
+
+.d-view-img {
+    margin: 37px 0 30px 0;
+    img {
+        width: 100%;
+    }
+}
+
+.kids-wrapper-blog {
+    .kids-knowledge-sec {
+        background-image: url('/meccabook/kids-bg-img.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 82px 0 75px;
+        .container {
+            .nav-tabs {
+                .nav-item {
+                    .nav-link {
+                        background-color: transparent;
+                        line-height: 30px;
+                        @media all and (max-width: 425px) {
+                            line-height: 26px;
+                        }
+                    }
+                }
+            }
+            .tab-content {
+                .tab-pane {
+                    .latest-slider {
+                        .latest-item {
+                            @media all and (max-width: 767px) {
+                                background: rgb(255, 255, 255);
+                                border-radius: unset;
+                            }
+                        }
+                        .knowledge-info {
+                            h2.sec-title {
+                                font-weight: 400;
+                                margin-bottom: 2px;
+                                @media all and (max-width: 425px) {
+                                    font-size: 30px;
+                                    line-height: 32px;
+                                    font-weight: 400;
+                                }
+                            }
+                            span.publisher {
+                                margin-bottom: 10px;
+                                line-height: 25px;
+                                @media all and (max-width: 425px) {
+                                    font-size: 22px;
+                                    line-height: 29px;
+                                    font-weight: 400;
+                                }
+                            }
+                            .review {
+                                .price {
+                                    line-height: 30px;
+                                }
+                            }
+                            .btn {
+                                &.viewBtn {
+                                    line-height: 21px;
+                                }
+                            }
+                        }
+                        .latest-view {
+                            padding-left: 22px;
+                            @media all and (max-width: 767px) {
+                                padding-left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            .sec-head.kids {
+                @media screen and (max-width: 767px) {
+                    margin: 0 20px;
+                }
+                h2.sec-title.blue-text {
+                    @media screen and (max-width: 425px) {
+                        font-size: 22px;
+                        line-height: 24px;
+                        font-weight: 700;
+                    }
+                }
+                p.sec-desc.blue-text {
+                    @media screen and (max-width: 425px) {
+                        font-size: 16px;
+                        line-height: 22px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+    .related-product-sec {
+        background-image: url('/meccabook/kids-bg-img.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        .container {
+            h4.related-title {
+                margin-bottom: 30px;
+                line-height: 50px;
+            }
+            .related-slider {
+                .related-wrap {
+                    .category-img {
+                        padding: 31px 32px 32px 31px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.kids-home-banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 173px;
+    width: 100%;
+    @media all and (min-width: 1199px) {
+        min-height: 600px;
+    }
+}
+
+.kinds-banner-content {
+    display: flex;
+    text-align: center;
+    min-height: 173px;
+    align-items: center;
+    justify-content: center;
+    max-width: 547px;
+    margin: 0 auto;
+    @media all and (min-width: 1199px) {
+        min-height: 600px;
+    }
+}
+
+h1.kinds-bn-title {
+    color: #fff !important;
+    @include fontsize(50px);
+    letter-spacing: -0.065em;
+    line-height: 90%;
+    font-family: $primary-fontfamily;
+    text-shadow: 0px 0px 10px #000000;
+    @media all and (min-width: 1200px) {
+        @include fontsize(80px);
+    }
+    @media screen and (max-width: 767px) {
+        line-height: 54px;
+        font-size: 40px;
+    }
+}
+
+.kids-card-head {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sec-head.kids {
+    h2.sec-title {
+        &.blue-text {
+            margin-bottom: 12px;
+        }
+    }
+    p.sec-desc {
+        line-height: 29px;
+    }
+}
+
+.kids-img-card {
+    margin: 0 5px;
+    position: relative;
+    width: calc(50% - 20px);
+    margin-bottom: 15px;
+    @media all and (min-width: 1024px) {
+        width: 221px;
+        margin-bottom: 0;
+    }
+    .select-tab {
+        display: block;
+        margin: 0;
+        cursor: pointer;
+        .kids-ctg-img {
+            width: 100%;
+            max-width: 200px;
+            display: block;
+            border-radius: 5px;
+            max-height: 221px;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+        .kind-ctg {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 20px;
+            display: none;
+            max-height: 221px;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+        &:hover {
+            .kind-ctg {
+                display: block;
+                margin: 0 auto;
+            }
+            .kids-ctg-img {
+                display: none;
+                margin: 0 auto;
+            }
+            .ctg-name {
+                display: block;
+            }
+        }
+        .ctg-name {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+            width: 100%;
+            align-content: center;
+            justify-content: center;
+            text-align: center;
+            h6 {
+                color: #FFFFFF;
+                font-size: 25px;
+                font-weight: normal;
+                line-height: 100%;
+                font-family: $primary-fontfamily;
+                margin-bottom: 0;
+                letter-spacing: -0.015em;
+                text-shadow: 0px 0px 6.91002px #000000;
+                @media all and (max-width: 767px) {
+                    font-size: 20px;
+                    line-height: 20px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+.tab-content {
+    .latest-view {
+        .img-wrp {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @media all and (min-width: 992px) {
+                height: 378px;
+                max-width: 378px;
+                width: 100%;
+            }
+            img {
+                @media all and (min-width: 992px) {
+                    max-height: 299.21px;
+                    max-width: 297.64px;
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.25));
+                }
+            }
+        }
+    }
+    .latest-books {
+        .img-wrp {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @media all and (min-width: 992px) {
+                height: 178px;
+                max-width: 178px;
+            }
+            img {
+                @media all and (min-width: 992px) {
+                    max-height: 140px;
+                    max-width: 140px;
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+                }
+            }
+        }
+    }
+}

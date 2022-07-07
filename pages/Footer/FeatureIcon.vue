@@ -1,0 +1,14 @@
+<template>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.89 1.44991L20.89 5.44991C21.5696 5.78764 21.9996 6.48096 22 7.23991V16.7699C21.9996 17.5289 21.5696 18.2222 20.89 18.5599L12.89 22.5599C12.3266 22.8418 11.6634 22.8418 11.1 22.5599L3.09999 18.5599C2.42098 18.2178 1.9947 17.5202 1.99999 16.7599V7.23991C2.00039 6.48096 2.43033 5.78764 3.10999 5.44991L11.11 1.44991C11.6706 1.17132 12.3294 1.17132 12.89 1.44991Z" stroke="#B69F62" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M2.32001 6.15991L12 10.9999L21.68 6.15991" stroke="#B69F62" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M12 22.76V11" stroke="#B69F62" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M7 3.5L17 8.5" stroke="#B69F62" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+</template>
+
+<script>
+    export default {
+        name: 'FeaturesIcon',
+    }
+</script>

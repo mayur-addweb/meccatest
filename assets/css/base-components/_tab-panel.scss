@@ -1,0 +1,50 @@
+.nav-tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 18px;
+    width: calc(100% + 20px);
+    margin: 0 -10px 18px;
+    border: 0;
+    @media all and (min-width: 768px) {
+        width: 420px;
+        margin: 0 auto 22px;
+    }
+    .nav-link {
+        @include fontsize(16px);
+        line-height: 1.6;
+        border: 0;
+        padding: 0 10px;
+        color: $gray-dark !important;
+        font-family: $secondary-font;
+        position: relative;
+        @media all and (min-width: 768px) {
+            @include fontsize(18px);
+        }
+        @media all and (min-width: 992px) {
+            @include fontsize(20px);
+        }
+        @media all and (min-width: 1200px) {
+            @include fontsize(24px);
+        }
+        &:after {
+            @include after(100%, 2px);
+            @include abs(100%, auto, auto, 0);
+            background: transparent;
+        }
+        &.active {
+            &:after {
+                background: $gold;
+            }
+        }
+        &.blue-text.active {
+            &::after {
+                background: #21A6BB;
+            }
+        }
+        &.purple-text.active {
+            &::after {
+                background: #72388D;
+            }
+        }
+    }
+}

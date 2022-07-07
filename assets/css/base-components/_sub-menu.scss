@@ -1,0 +1,181 @@
+.header-bottom {
+    position: relative;
+    .dropdown-toggle {
+        @media all and (max-width: 767px) {
+            position: relative;
+        }
+        &:after {
+            @media all and (max-width: 767px) {
+                @include abs(50%, 0, auto, auto);
+                transform: translateY(-50%) rotate(-90deg);
+                margin: 0;
+                height: 12px;
+                right: 0 !important;
+                background: url(/meccabook/down-arrow-2.svg) no-repeat center top;
+            }
+        }
+    }
+    .dropdown-menu {
+        @include abs(0, auto, auto, 0);
+        background: #fff;
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        padding: 23px 10px 23px 29px;
+        @media all and (min-width: 768px) {
+            top: 99.9%;
+            left: -23px;
+            min-height: 340px;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            width: 210px;
+            padding: 20px 0;
+        }
+        li {
+            &:hover {
+                .dropdown-item+.third-lavelmenu {
+                    @media all and (min-width: 768px) {
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+    .dropdown-item {
+        @include font-size(16px);
+        padding-left: 33px;
+        padding: 0.34rem 1.5rem;
+        margin: 7px 0;
+        position: relative;
+        cursor: pointer;
+        @media all and (min-width: 768px) {
+            margin: 12px 0;
+        }
+        &:after {
+            @media all and (max-width: 767px) {
+                @include after(12px, 12px);
+                @include abs(50%, 0, auto, auto);
+                transform: translateY(-50%) rotate(-90deg);
+                margin: 0;
+                height: 12px;
+                background: url(/meccabook/down-arrow-2.svg) no-repeat center top;
+            }
+        }
+        &.has-submenu {
+            &:after {
+                @media all and (min-width: 768px) {
+                    @include after(16px, 8px);
+                    @include abs(50%, 7px, auto, auto);
+                    transform: translateY(-50%) rotate(-90deg);
+                    margin: 0;
+                    background: url(/meccabook/down-arrow-2.svg) no-repeat center top;
+                }
+            }
+            &.e {
+                &:after {
+                    content: none;
+                }
+            }
+        }
+        &.active {
+            background: none;
+            @media all and (min-width: 768px) {
+                font-weight: $fw-bold;
+                opacity: 1;
+            }
+            &+.third-lavelmenu {
+                display: block;
+                @media all and (min-width: 768px) {
+                    display: flex;
+                }
+            }
+        }
+        &:active {
+            background: none;
+        }
+    }
+    .nav-link {
+        &.active {
+            &+.dropdown-menu {
+                display: block;
+            }
+        }
+    }
+}
+
+.backto-main {
+    @media all and (max-width: 767px) {
+        @include fontsize(16px);
+        line-height: 1.4;
+        font-weight: $fw-bold;
+        padding-left: 27px;
+        position: relative;
+        margin-bottom: 7px;
+    }
+    .back-to {
+        @media all and (max-width: 767px) {
+            @include abs(50%, auto, auto, 0);
+            transform: translateY(-50%) rotate(90deg);
+            width: 12px;
+            height: 10px;
+        }
+    }
+}
+
+.main-menu {
+    padding: 0 10px;
+    @media all and (min-width: 768px) {
+        height: 80px;
+    }
+    .nav-item {
+        position: static;
+        @media all and (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+    }
+}
+
+.third-lavelmenu {
+    @include abs(0, auto, auto, 0);
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    padding: 23px 10px 23px 29px;
+    display: none;
+    padding: 20px 0;
+    background: $beige;
+    @media all and (max-width: 767px) {
+        padding-left: 30px;
+        overflow: auto;
+    }
+    @media all and (min-width: 768px) {
+        width: 380px;
+        left: 100%;
+        top: 0;
+    }
+    .level-item {
+        @include font-size(16px);
+        line-height: 1.4;
+        color: $navy;
+        margin: 7px 0;
+        padding-left: 20px;
+        padding-right: 16px;
+        display: block;
+        width: 100%;
+        @media all and (min-width: 768px) {
+            padding-top: 4px;
+            padding-bottom: 4px;
+            margin: 12px 0;
+        }
+        &:hover {
+            background: $white;
+        }
+    }
+    ul {
+        @media all and (min-width: 768px) {
+            width: 50%;
+        }
+    }
+}
